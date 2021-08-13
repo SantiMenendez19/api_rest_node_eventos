@@ -1,0 +1,21 @@
+{
+  "name": "api-rest-events",
+  "version": "1.0.0",
+  "description": "API Rest de eventos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Santiago Menendez",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.12",
+    "validator": "^13.6.0"
+  }
+}

@@ -1,0 +1,123 @@
+### Crear un evento
+
+POST http://localhost:9000/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ikp1YW4iLCJpZCI6IjYxMTU5OTI0MzY4Njk4MmY2MGMxNjRiNSIsImlhdCI6MTYyODg2NTU5Mn0.nPHhf20bo65J_wYPIY2FiMgj9IAfM2Z1oMGgKgRrmf8
+
+{
+    "title": "Evento 1",
+    "description" : "Evento de prueba",
+    "dateList": [{"date" : "2021-08-10T14:00:00", "price" : 50}, {"date" : "2021-08-12T20:30:00", "price" : 60.75}],
+    "location" : "Buenos Aires",
+    "image" : "http://www.google.com",
+    "featured" : false
+}
+
+###
+
+POST http://localhost:9000/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ikp1YW4iLCJpZCI6IjYxMTU5OTI0MzY4Njk4MmY2MGMxNjRiNSIsImlhdCI6MTYyODg2NTU5Mn0.nPHhf20bo65J_wYPIY2FiMgj9IAfM2Z1oMGgKgRrmf8
+
+{
+    "title": "Evento 2",
+    "description" : "Evento de prueba",
+    "dateList": [{"date" : "2021-10-10T14:00:00", "price" : 50}, {"date" : "2021-10-12T20:30:00", "price" : 60.75}],
+    "location" : "Buenos Aires",
+    "image" : "http://www.google.com",
+    "featured" : false
+}
+
+
+###
+
+POST http://localhost:9000/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ikp1YW4iLCJpZCI6IjYxMTU5OTI0MzY4Njk4MmY2MGMxNjRiNSIsImlhdCI6MTYyODg2NTU5Mn0.nPHhf20bo65J_wYPIY2FiMgj9IAfM2Z1oMGgKgRrmf8
+
+{
+    "title": "Evento 3",
+    "description" : "Evento de prueba",
+    "dateList": [{"date" : "2021-12-10T14:00:00", "price" : 50}, {"date" : "2021-12-12T20:30:00", "price" : 60.75}],
+    "location" : "Buenos Aires",
+    "image" : "http://www.google.com",
+    "featured" : true
+}
+
+###
+
+POST http://localhost:9000/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ikp1YW4iLCJpZCI6IjYxMTU5OTI0MzY4Njk4MmY2MGMxNjRiNSIsImlhdCI6MTYyODg2NTU5Mn0.nPHhf20bo65J_wYPIY2FiMgj9IAfM2Z1oMGgKgRrmf8
+
+{
+    "title": "Evento 4",
+    "description" : "Evento de prueba",
+    "dateList": [{"date" : "2021-08-13T14:00:00", "price" : 50}, {"date" : "2021-10-11T20:30:00", "price" : 60.75}],
+    "location" : "Buenos Aires",
+    "image" : "http://www.google.com",
+    "featured" : true
+}
+
+###
+
+POST http://localhost:9000/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ikp1YW4iLCJpZCI6IjYxMTU5OTI0MzY4Njk4MmY2MGMxNjRiNSIsImlhdCI6MTYyODg2NTU5Mn0.nPHhf20bo65J_wYPIY2FiMgj9IAfM2Z1oMGgKgRrmf8
+
+{
+    "title": "Evento 5",
+    "description" : "Evento de prueba",
+    "dateList": [{"date" : "2021-01-12T14:00:00", "price" : 50}, {"date" : "2020-10-11T20:30:00", "price" : 60.75}],
+    "location" : "Buenos Aires",
+    "image" : "http://www.google.com",
+    "featured" : false
+}
+
+###
+
+POST http://localhost:9000/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Ikp1YW4iLCJpZCI6IjYxMTU5OTI0MzY4Njk4MmY2MGMxNjRiNSIsImlhdCI6MTYyODg2NTU5Mn0.nPHhf20bo65J_wYPIY2FiMgj9IAfM2Z1oMGgKgRrmf8
+
+{
+    "title": "Evento 6",
+    "description" : "Evento de prueba",
+    "dateList": [{"date" : "2021-01-12T14:00:00", "price" : 50}, {"date" : "2020-10-11T20:30:00", "price" : 60.75}],
+    "location" : "Buenos Aires",
+    "image" : "http://www.google.com",
+    "featured" : false
+}
+
+### Ver todos los eventos
+
+GET http://localhost:9000/events
+
+
+### Ver eventos listados por fecha
+
+GET http://localhost:9000/events/ordered
+
+
+### Ver un evento en particular (id)
+
+GET http://localhost:9000/events/6116844fa27d941a6c32ed45
+
+
+### Compartir un evento existente
+
+POST http://localhost:9000/events/6116844fa27d941a6c32ed45/share
+
+
+### Listar los eventos paginados
+
+GET http://localhost:9000/events/page/1
+
+###
+
+GET http://localhost:9000/events/page/2
+
+
+### Listar los eventos destacados (del dia de hoy)
+
+GET http://localhost:9000/events/highlights

@@ -1,0 +1,24 @@
+### Registrar un nuevo usuario
+
+POST http://localhost:9000/users/register
+Content-Type: application/json
+
+{
+    "userName" : "anonimous",
+    "password" : "1234"
+}
+
+
+### Loguear con un usuario
+
+POST http://localhost:9000/users/login
+Content-Type: application/json
+
+{
+    "userName" : "Juan",
+    "password" : "1234"
+}
+
+### Ver todos los usuarios
+
+GET http://localhost:9000/users/
