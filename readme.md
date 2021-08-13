@@ -9,7 +9,7 @@ Contiene los endpoints para los eventos y para los usuarios utilizando autentica
 
 ## Link de heroku
 
-El link de la API Rest en heroku es: <link pendiente>
+El link de la API Rest en heroku es: <https://calm-everglades-65561.herokuapp.com/>
 
 ## Link del ejercicio (requerimientos)
 
